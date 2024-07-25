@@ -5,7 +5,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';  // Fixed import path
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
 import DashboardPage from './pages/DashboardPage';
-import DailyJournalPage from './pages/DailyJournalPage';
+import ExpenseEntryForm from './pages/ExpenseEntryForm';
 import ReportsPage from './pages/ReportsPage';
 import InsightsPage from './pages/InsightsPage';
 import NotebookPage from './pages/NotebookPage';
@@ -33,7 +33,7 @@ function App() {
         ) : (
           <Route element={<MasterLayout />}>
             <Route path="/dashboard" element={<DashboardPage />} />
-            <Route path="/daily-journal" element={<DailyJournalPage />} />
+            <Route path="/daily-journal" element={<ExpenseEntryForm />} />
             <Route path="/reports" element={<ReportsPage />} />
             <Route path="/insights" element={<InsightsPage />} />
             <Route path="/notebook" element={<NotebookPage />} />
