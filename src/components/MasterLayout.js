@@ -4,7 +4,8 @@ import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import { Box } from '@mui/material';
-import Footer from './Footer'; // Import the Footer component
+import Footer from './Footer';
+import Breadcrumbs from './Breadcrumbs';
 
 const MasterLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -14,21 +15,25 @@ const MasterLayout = () => {
   };
 
   return (
-    <Box display="flex">
-      <Sidebar isSidebarOpen={isSidebarOpen} onToggleSidebar={handleToggleSidebar} />
-      <Box
-        component="main"
-        flexGrow={1}
-        marginLeft={isSidebarOpen ? '240px' : '0'}
-        transition="margin 0.3s"
-      >
-        <Navbar onToggleSidebar={handleToggleSidebar} />
-        <Box padding={2}>
-          <Outlet />
+    <Box display="flex" flexDirection="column" minHeight="100vh">
+      <Navbar onToggleSidebar={handleToggleSidebar} />
+      <Box display="flex" flexGrow={1}>
+        <Sidebar isSidebarOpen={isSidebarOpen} onToggleSidebar={handleToggleSidebar} />
+        <Box
+          component="main"
+          flexGrow={1}
+          marginLeft={isSidebarOpen ? '240px' : '0'}
+          transition="margin 0.3s"
+          display="flex"
+          flexDirection="column"
+        >
+          <Box padding={2} flexGrow={1}>
+            <Breadcrumbs />
+            <Outlet />
+          </Box>
+          <Footer />
         </Box>
-           <Footer /> {/* Add the Footer component */}
       </Box>
-   
     </Box>
   );
 };

@@ -6,8 +6,8 @@ import SignupPage from './pages/SignupPage';  // Fixed import path
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
 import DashboardPage from './pages/DashboardPage';
 import ExpenseEntryForm from './pages/ExpenseEntryForm';
-import ReportsPage from './pages/ReportsPage';
-import InsightsPage from './pages/InsightsPage';
+import TemplateCategoryEntryList from './pages/TemplateCategoryEntryList';
+import ExpenseBulkEntryScreen from './pages/ExpenseBulkEntryScreen';
 import NotebookPage from './pages/NotebookPage';
 import TradeReplayPage from './pages/TradeReplayPage';
 import MasterLayout from './components/MasterLayout'; // A component to handle the layout with Sidebar and Navbar
@@ -34,8 +34,8 @@ function App() {
           <Route element={<MasterLayout />}>
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/daily-journal" element={<ExpenseEntryForm />} />
-            <Route path="/reports" element={<ReportsPage />} />
-            <Route path="/insights" element={<InsightsPage />} />
+            <Route path="/reports" element={<TemplateCategoryEntryList />} />
+            <Route path="/insights" element={<ExpenseBulkEntryScreen />} />
             <Route path="/notebook" element={<NotebookPage />} />
             <Route path="/trade-replay" element={<TradeReplayPage />} />
             {/* Redirect to dashboard if the route does not match */}

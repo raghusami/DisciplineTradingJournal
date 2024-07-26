@@ -1,6 +1,7 @@
 // src/components/ExpenseEntryForm.js
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';  // Import Navbar component
+import Breadcrumbs from '../components/Breadcrumbs';
 import {
   Box, Button,TextField, MenuItem,Container, Checkbox, FormControlLabel, Typography, Grid, Paper,
 } from '@mui/material';
@@ -74,6 +75,7 @@ const ExpenseEntryForm = () => {
     <>
     <Navbar onToggleSidebar={handleToggleSidebar} title="Expense Entry" />
     <Container maxWidth={false} className="dashboard-container" sx={{ padding: '16px 24px' }}>
+      <Breadcrumbs/>
     <Paper style={{ padding: 16 }}>
       <form onSubmit={handleSubmit}>
         <Grid container spacing={2}>

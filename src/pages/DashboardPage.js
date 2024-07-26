@@ -11,7 +11,7 @@ import '../styles/DashboardPage.css';
 import { SubtitleOne, StyledButton, SubtitleTwo,StyledTab } from '../CommonStyles';
 import { Link } from 'react-router-dom';
 import { Add } from '@mui/icons-material'; // Import Add icon
-
+import Breadcrumbs from '../components/Breadcrumbs';
 // Theme color
 const themeColor = '#6357A6';
 
@@ -58,6 +58,7 @@ const DashboardPage = () => {
     <>
       <Navbar onToggleSidebar={handleToggleSidebar} title="Dashboard" />
       <Container maxWidth={false} className="dashboard-container" sx={{ padding: '16px 24px' }}>
+      <Breadcrumbs />
         <Grid container spacing={2}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={10}>
