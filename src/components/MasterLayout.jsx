@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import { Box } from '@mui/material';
 import Footer from './Footer';
-import Breadcrumbs from './Breadcrumbs';
+
 
 const MasterLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -28,7 +28,7 @@ const MasterLayout = () => {
           flexDirection="column"
         >
           <Box padding={2} flexGrow={1}>
-            <Breadcrumbs />
+           
             <Outlet />
           </Box>
           <Footer />

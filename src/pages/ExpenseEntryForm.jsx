@@ -80,7 +80,7 @@ const ExpenseEntryForm = () => {
       <form onSubmit={handleSubmit}>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Date"
               name="date"
@@ -95,7 +95,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Amount"
               name="amount"
@@ -107,7 +107,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               select
               fullWidth
               label="Category"
@@ -122,10 +122,10 @@ const ExpenseEntryForm = () => {
                   {option}
                 </MenuItem>
               ))}
-            </StyledTextField>
+            </TextField>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               select
               fullWidth
               label="Payment Method"
@@ -140,10 +140,10 @@ const ExpenseEntryForm = () => {
                   {option}
                 </MenuItem>
               ))}
-            </StyledTextField>
+            </TextField>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Description"
               name="description"
@@ -153,7 +153,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Merchant"
               name="merchant"
@@ -163,7 +163,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Location"
               name="location"
@@ -173,7 +173,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Tags"
               name="tags"
@@ -183,7 +183,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Currency"
               name="currency"
@@ -193,7 +193,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Project/Account"
               name="projectAccount"
@@ -203,7 +203,7 @@ const ExpenseEntryForm = () => {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Shared Expense Details"
               name="sharedDetails"
@@ -226,7 +226,7 @@ const ExpenseEntryForm = () => {
             </Button>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <StyledTextField
+            <TextField
               fullWidth
               label="Payment Confirmation Details"
               name="paymentConfirmation"
